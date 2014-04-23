@@ -1,0 +1,28 @@
+mkdir $1
+cd $1
+touch "$1.cpp"
+touch input.txt
+touch output.txt
+touch run
+chmod 755 run
+
+echo "#!/bin/bash" >> run
+echo "g++ $1.cpp -o p 
+if [  \"\$?\" = \"0\" ] ; then
+	./p < input.txt > output.txt	
+fi
+cat output.txt
+echo " "
+" >> run
+
+
+touch addit
+chmod 755 addit
+
+
+echo "#!/bin/bash" >> addit
+echo "cd ..
+ git add .
+ git commit -m ladder
+ git push
+" >> addit

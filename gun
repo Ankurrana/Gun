@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# echo "$@";
+# echo "$#";
+
+
+
+
+case $1 in 
+	init ) 
+		if [ "$2" != "" ] ; then 
+			ginit $2 
+		else
+			echo "UnRecogonised, init requires second argument to be git URl , null provided";
+		fi 
+		;;
+	new )
+		if [ -d .GUN ] ; then
+			if [ "$#" -lt 2 ] ; then
+				echo "new expects one more input , the name of the program"
+				exit 1;
+			fi 
+			gnew $2 $3 $4  
+		else
+			echo "GUN not yet initialized , run command gun init 'github url'"
+			exit 1;
+		fi 
+		;;
+	-* )
+	    echo "This is a flag and i have no work for a flag yet"
+		;;
+	*)
+		echo "Gun Could not recognise your input";		
+		cat usagehelp
+		exit 1;
+
+		;;
+esac

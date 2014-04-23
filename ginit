@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git init
+mkdir .GUN
+cd .GUN
+touch config
+echo "url=$1" >> config
+git add . 
+git commit -m "first commit"
+git remote add origin $1
+git push -u origin master

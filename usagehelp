@@ -1,0 +1,10 @@
+This document provides all necessary infomation required to get started working with GUN.
+
+##  Getting Started  ##
+	1. Create a new with any name where you want to make your programs. This folder represents your repo at Github.
+	2. Enter to that directory.
+	3. Now you first need a git repo at the website www.github.com.
+	4. Let the URL to your repo be "www.ankurrana.github/Codechef.git"
+	5. Now at your local machine run command  "gun init www.ankurrana.github.com/Codechef.git"
+	6. The above Command will create neccessary configuration files for controlling and maintaining your gunRepo.
+	7. It will create a .GUN folder (hidden) , you can view it by command 'ls -la' or "ctrl+H" in explorer. 
