@@ -1,10 +1,30 @@
 This document provides all necessary infomation required to get started working with GUN.
 
+Place all these files anywhere the path is set to... or in home/username/bin (this directory has default path access)
+
 ##  Getting Started  ##
-	1. Create a new with any name where you want to make your programs. This folder represents your repo at Github.
+	1. Create a new directory with any name where you want to make your programs. This folder represents your repo at Github.
 	2. Enter to that directory.
 	3. Now you first need a git repo at the website www.github.com.
 	4. Let the URL to your repo be "www.ankurrana.github/Codechef.git"
 	5. Now at your local machine run command  "gun init www.ankurrana.github.com/Codechef.git"
 	6. The above Command will create neccessary configuration files for controlling and maintaining your gunRepo.
 	7. It will create a .GUN folder (hidden) , you can view it by command 'ls -la' or "ctrl+H" in explorer. 
+
+## In order ro create a new program type::
+	gun new "nameofprogramwithourquotes" && cd "nameoftheprogramwithoutquotes".
+	1. This command will create a new directory with program name.
+	2. We'll also enter the directory with cd command.
+	3. now run subl "nameoftheprogram....cpp"
+	4. This will open subl with cpp extension.
+	5. Write Code.
+	6. In order to test your program , write the sample inputs to the input.txt file already created by gun.
+	7. Just enter nano input.txt. //it will open nano
+	8. Save and exit the nano editor.
+	9. run command ./run it will run the command and present you the output.
+	10. After completing run command ./addit.
+	11. THis command will coneect to github and ask your github username and password.
+	12. Enter your correct username and password and your code will be added to the repository. :)
+
+Note:: git must be installed and configured in your computer. :)
+Email me at ankurofficial@hotmail.com for any clarifications
